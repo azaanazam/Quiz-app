@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include jsPDF library here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Starting message before quiz begins -->
+    <div id="userNameSection">
+      <label for="userName">Enter your name:</label>
+      <input type="text" id="userName" placeholder="Your Name" />
+      <button id="startQuizButton" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <h2>Azan's Quiz</h2>
+    <p id="question">Question will appear here</p>
+    <input type="text" id="userInput" placeholder="Enter your answer" />
+    <button onclick="submitAnswer()">Submit</button>
+
+    <p id="feedback"></p>
+    <p id="finalResult" style="font-weight: bold;"></p>
+    <p id="congratulations" style="font-weight: bold;"></p>
+    <p id="timer"></p> <!-- Timer display -->
+    
+    <!-- Certificate Section -->
+    <div id="certificate" style="display: none; text-align: center; margin-top: 20px;">
+      <h2>Congratulations!</h2>
+      <p>Certificate of Completion</p>
+      <p id="certificateName" style="font-size: 1.5rem; font-weight: bold;"></p>
+      <p id="certificateScore" style="font-size: 1.2rem;"></p>
+      <p id="certificateGrade" style="font-size: 1.2rem;"></p>
+      <p>Thank you for completing the quiz!</p>
+      <button onclick="downloadCertificate()">Download Certificate</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script> <!-- Your main script file -->
+</body>
+</html>

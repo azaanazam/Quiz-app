@@ -1,0 +1,107 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin: 0;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#feedback, #finalResult {
+  margin-top: 15px;
+}
+
+#certificate {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#certificateName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#certificateScore, #certificateGrade {
+  font-size: 1.2rem;
+}
+
+/* Media Query for Tablets and smaller screens */
+@media (max-width: 768px) {
+  body {
+      padding: 20px;
+  }
+  
+  .container {
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  input, button {
+      font-size: 0.9rem;
+  }
+
+  #certificateName {
+      font-size: 1.3rem;
+  }
+
+  #certificateScore, #certificateGrade {
+      font-size: 1rem;
+  }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  .container {
+      padding: 15px;
+      width: 100%;
+      max-width: 350px;
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+
+  input, button {
+      font-size: 0.8rem;
+  }
+
+  #certificateName {
+      font-size: 1.2rem;
+  }
+
+  #certificateScore, #certificateGrade {
+      font-size: 1rem;
+  }
+}
